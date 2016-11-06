@@ -74,8 +74,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\EFDbContext.cs" />
+    <Compile Include="Entities\Absence.cs" />
+    <Compile Include="Entities\Department.cs" />
+    <Compile Include="Entities\Faculty.cs" />
+    <Compile Include="Entities\GroupStudent.cs" />
+    <Compile Include="Entities\Position.cs" />
+    <Compile Include="Entities\Qualification.cs" />
+    <Compile Include="Entities\Speciality.cs" />
+    <Compile Include="Entities\Student.cs" />
+    <Compile Include="Entities\Subject.cs" />
+    <Compile Include="Entities\Transcript.cs" />
+    <Compile Include="Entities\TypeClass.cs" />
+    <Compile Include="Entities\TypeControl.cs" />
+    <Compile Include="Entities\UniversityTeacher.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Interfaces\IAbsenceRepository.cs" />
+    <Compile Include="Interfaces\IDepartmentRepository.cs" />
+    <Compile Include="Interfaces\IFacultyRepository.cs" />
+    <Compile Include="Interfaces\IGroupRepository.cs" />
+    <Compile Include="Interfaces\ISpecialityRepository.cs" />
+    <Compile Include="Interfaces\IStudentRepository.cs" />
+    <Compile Include="Interfaces\ISubjectRepository.cs" />
+    <Compile Include="Interfaces\ITeacherRepository.cs" />
+    <Compile Include="Interfaces\ITranscriptRepository.cs" />
+    <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AbsenceRepository.cs" />
+    <Compile Include="Repositories\DepartmentRepository.cs" />
+    <Compile Include="Repositories\FacultyRepository.cs" />
+    <Compile Include="Repositories\GroupRepository.cs" />
+    <Compile Include="Repositories\SpecialityRepository.cs" />
+    <Compile Include="Repositories\StudentRepository.cs" />
+    <Compile Include="Repositories\SubjectRepository.cs" />
+    <Compile Include="Repositories\TeacherRepository.cs" />
+    <Compile Include="Repositories\TranscriptRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
