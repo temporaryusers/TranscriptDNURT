@@ -988,12 +988,16 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\FacultyController.cs" />
+    <Compile Include="Controllers\StatisticsAbsenceController.cs" />
+    <Compile Include="Controllers\StatisticsTranscriptController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Controllers\GroupController.cs" />
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
+    <Compile Include="Models\AbsenceModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\TranscriptModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\SpecialityController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
@@ -1100,6 +1104,8 @@
     <Content Include="Views\User\Delete.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\StatisticsAbsence\Index.cshtml" />
+    <Content Include="Views\StatisticsTranscript\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

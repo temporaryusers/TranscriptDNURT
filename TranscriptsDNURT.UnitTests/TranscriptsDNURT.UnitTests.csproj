@@ -89,7 +89,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AbsenceTests.cs" />
     <Compile Include="AdminTests.cs" />
+    <Compile Include="DepartmentTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
