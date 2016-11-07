@@ -59,5 +59,29 @@ namespace TranscriptDNURT.WebUI.Controllers
 
             return data;
         }
+
+        public ActionResult ExportToExcel()
+        {
+            var data = GetAbsence();
+
+            var grid = new GridView();
+
+            grid.DataSource = data;
+            grid.DataBind();
+            Response.ClearContent();
+            Response.AddHeader("content-disposition", "attachment; filename=Absences.xls");
+
+            Response.ContentType = "application/excel";
+
+            StringWriter sw = new StringWriter();
+
+            HtmlTextWriter htw = new HtmlTextWriter(sw);
+
+            grid.RenderControl(htw);
+            Response.Write(sw.ToString());
+            Response.End();
+
+            return View("Index");
+        }
     }
 }
