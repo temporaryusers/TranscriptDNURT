@@ -7,7 +7,7 @@ using System.Web.Security;
 using TranscriptsDNURT.Domain.Interfaces;
 using TranscriptDNURT.WebUI.Models;
 
-namespace Transcript.WebUI.Controllers
+namespace TranscriptDNURT.WebUI.Controllers
 {
     public class AccountController : Controller
     {
